@@ -1,0 +1,203 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: admin
+      changes:
+        - insert:
+            tableName: childs
+            columns:
+              - column:
+                  name: id
+                  value: 0
+              - column:
+                  name: name
+                  value: "Instance 0-0"
+              - column:
+                  name: gender
+                  value: "Male"
+              - column:
+                  name: age
+                  value: 10
+              - column:
+                  name: father_id
+                  value: 0
+        - insert:
+            tableName: childs
+            columns:
+              - column:
+                  name: id
+                  value: 1
+              - column:
+                  name: name
+                  value: "Instance 0-1"
+              - column:
+                  name: gender
+                  value: "Female"
+              - column:
+                  name: age
+                  value: 5
+              - column:
+                  name: father_id
+                  value: 0
+        - insert:
+            tableName: childs
+            columns:
+              - column:
+                  name: id
+                  value: 2
+              - column:
+                  name: name
+                  value: "Instance 0-2"
+              - column:
+                  name: gender
+                  value: "Male"
+              - column:
+                  name: age
+                  value: 15
+              - column:
+                  name: father_id
+                  value: 0
+        - insert:
+            tableName: childs
+            columns:
+              - column:
+                  name: id
+                  value: 3
+              - column:
+                  name: name
+                  value: "Instance 1-0"
+              - column:
+                  name: gender
+                  value: "Female"
+              - column:
+                  name: age
+                  value: 7
+              - column:
+                  name: father_id
+                  value: 1
+        - insert:
+            tableName: childs
+            columns:
+              - column:
+                  name: id
+                  value: 4
+              - column:
+                  name: name
+                  value: "Instance 1-1"
+              - column:
+                  name: gender
+                  value: "Female"
+              - column:
+                  name: age
+                  value: 3
+              - column:
+                  name: father_id
+                  value: 1
+        - insert:
+            tableName: childs
+            columns:
+              - column:
+                  name: id
+                  value: 5
+              - column:
+                  name: name
+                  value: "Instance 2-0"
+              - column:
+                  name: gender
+                  value: "Male"
+              - column:
+                  name: age
+                  value: 8
+              - column:
+                  name: father_id
+                  value: 2
+        - insert:
+            tableName: childs
+            columns:
+              - column:
+                  name: id
+                  value: 6
+              - column:
+                  name: name
+                  value: "Instance 2-1"
+              - column:
+                  name: gender
+                  value: "Female"
+              - column:
+                  name: age
+                  value: 3
+              - column:
+                  name: father_id
+                  value: 2
+        - insert:
+            tableName: childs
+            columns:
+              - column:
+                  name: id
+                  value: 7
+              - column:
+                  name: name
+                  value: "Instance 2-2"
+              - column:
+                  name: gender
+                  value: "Male"
+              - column:
+                  name: age
+                  value: 3
+              - column:
+                  name: father_id
+                  value: 2
+        - insert:
+            tableName: childs
+            columns:
+              - column:
+                  name: id
+                  value: 8
+              - column:
+                  name: name
+                  value: "Instance 3-0"
+              - column:
+                  name: gender
+                  value: "Male"
+              - column:
+                  name: age
+                  value: 8
+              - column:
+                  name: father_id
+                  value: 3
+        - insert:
+            tableName: childs
+            columns:
+              - column:
+                  name: id
+                  value: 9
+              - column:
+                  name: name
+                  value: "Instance 3-1"
+              - column:
+                  name: gender
+                  value: "Female"
+              - column:
+                  name: age
+                  value: 13
+              - column:
+                  name: father_id
+                  value: 3
+        - insert:
+            tableName: childs
+            columns:
+              - column:
+                  name: id
+                  value: 10
+              - column:
+                  name: name
+                  value: "Instance 3-2"
+              - column:
+                  name: gender
+                  value: "Male"
+              - column:
+                  name: age
+                  value: 3
+              - column:
+                  name: father_id
+                  value: 3

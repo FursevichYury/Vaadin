@@ -1,0 +1,39 @@
+version: '3.3'
+
+services:
+  db:
+    image: mysql:latest
+    container_name: db
+    restart: always
+    environment:
+      MYSQL_DATABASE: example
+      MYSQL_ROOT_PASSWORD: 123
+    networks:
+      - network
+    ports:
+      - "3308:3306"
+  adminer:
+    image: adminer:latest
+    container_name: adminer
+    restart: always
+    depends_on:
+      - db
+    networks:
+      - network
+    ports:
+      - "8085:8080"
+  app:
+    image: vaadinapp
+    build: ../
+    container_name: vaadinapp
+    restart: always
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    depends_on:
+      - db
+    networks:
+      - network
+    ports:
+      - "8082:8082"
+networks:
+  network:
